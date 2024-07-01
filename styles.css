@@ -1,55 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 1em 0;
+  }
+  
+  section {
+    margin-bottom: 2em;
+  }
+  
+  .container {
+    display: flex;  /* Enable flexbox layout for two columns */
+    flex-wrap: wrap;  /* Allow content to wrap if needed */
+    width: 80%;  /* Adjust width as desired */
+    margin: 0 auto;  /* Center the container horizontally */
+  }
+  
+  section, aside { /* Style both sections and aside element */
+    flex: 1;  /* Make each section and aside take up half the width */
+    padding: 1em;  /* Add some padding for readability */
+    border: 1px solid #ddd;  /* Add a light border for separation */
+    margin-bottom: 1em;  /* Add some margin for spacing */
+  }
+  
+  aside { /* Additional styling for the aside element */
+    text-align: center;  /* Center the contact information */
+  }
+  
+  footer {
     text-align: center;
-}
-
-section {
-    margin: 2em 0;
-    padding: 2em;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    margin-bottom: 0.5em;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.split {
-    flex: 1;
-    margin: 1em;
-}
-
-.split.left {
-    margin-right: 0.5em;
-}
-
-.split.right {
-    margin-left: 0.5em;
-}
-
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-    
-    .split {
-        margin: 1em 0;
-    }
-}
+    padding: 1em;
+    background-color: #eee;
+  }
